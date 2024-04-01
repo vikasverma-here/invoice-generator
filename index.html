@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- top section starts here -->
+
+    <div class="top-section">
+        <h1>Naitik Computer Shop </h1>
+        <p>Palhari , Zaidpur Road ,Barabanki (U.P) 225001</p>
+        <h2>INVOICE</h2>
+    </div>
+
+    <!-- mid secton start here  -->
+
+    <div class="input-container">
+      
+        <div class="form-group">
+          <label for="mobileNumber">Mobile Number:</label>
+          <input type="tel" id="mobileNumber" placeholder="Enter mobile number">
+        </div>
+        <div class="form-group">
+          <label for="gstin">GSTIN:</label>
+          <input type="text" id="gstin" placeholder="Enter GSTIN">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter email address">
+        </div>
+        <div class="form-group">
+          <label for="date">Date:</label>
+          <input type="date" id="date">
+        </div>
+        <div class="form-group">
+          <label for="billedTo">Billed To:</label>
+          <input type="text" id="billedTo" placeholder="Enter billed to">
+        </div>
+        <div class="form-group">
+          <label for="partyName">Party Name:</label>
+          <input type="text" id="partyName" placeholder="Enter party name">
+        </div>
+        <div class="form-group">
+          <label for="partyAddress">Party Address:</label>
+          <input type="text" id="partyAddress" placeholder="Enter party address">
+        </div>
+        <div class="form-group">
+          <label for="partyMobile">Party Mobile Number:</label>
+          <input type="tel" id="partyMobile" placeholder="Enter party mobile number">
+        </div>
+      </div>
+
+    <!-- end section start here -->
+
+
+    <div class="invoice-container">
+     
+      <div class="invoice-details">
+        <label for="billNumber">Bill Number:</label>
+        <input type="text" id="billNumber">
+        <!-- Other invoice details inputs -->
+        <label for="gstSelect">Select GST:</label>
+        <select id="gstSelect">
+          <option value="12">12%</option>
+          <option value="18">18%</option>
+        </select>
+      </div>
+      <table id="itemsTable">
+        <tr>
+          <th>Item Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+        <!-- Item rows will be added dynamically -->
+      </table>
+      <button id="addItemBtn">Add Item</button>
+      <button id="printBtn">Print</button>
+      <div id="totalSection">
+        <p>Total: <span id="totalAmount">0</span></p>
+        <p>GST Amount: <span id="gstAmount">0</span></p>
+        <p>Grand Total: <span id="grandTotal">0</span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
